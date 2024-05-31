@@ -38,13 +38,16 @@ nav ul{
 .section{
      display: flex;
      align-items: center;
-     height: calc(100vh  - 60px);
+     height: 764px;
+     background: #F2F0FF;
+
 }
 
 .section h1{
      font-weight: 600;
      font-size: 90px;
-     line-height: 95px
+     line-height: 95px;
+     
 }
 .section p{
      font-weight: 300px;
@@ -68,7 +71,8 @@ nav ul{
 .section-content{
      display: flex;
      flex-direction: column;
-     gap: 16px;
+     gap: 1
+     6px;
 }
 .brand-icons{
      display: flex;
