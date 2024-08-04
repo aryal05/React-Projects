@@ -12,4 +12,4 @@ const songsData = ({image,name,desc,id}) => {
   )
 }
 
-export default songsData
+export default songsData;
