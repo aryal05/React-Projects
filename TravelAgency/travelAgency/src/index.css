@@ -12,4 +12,7 @@
 
 
     }
+    .travigo-container{
+        @apply w-[85vw] xl:w-[95vw] m-auto;
+    }
 }
