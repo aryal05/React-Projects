@@ -1,10 +1,12 @@
 import React from 'react'
-
+import { NavBar, Hero, Footer } from './components'
 const App = () => {
   return (
-    <div>
-      <h1 className='flex justify-center align-center bg-black text-white'>hello</h1>
-    </div>
+<>
+ <NavBar/>
+ <Hero/>
+ <Footer/>
+</>
   )
 }
 
