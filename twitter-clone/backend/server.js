@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000;
 
 // console.log(process.env.MONGO_URI)
 
-app.use(express.json());//to parse req.body
+app.use(express.json());//to parse req.body 
 
 app.use("/api/auth",authRoutes)
 
