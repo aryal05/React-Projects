@@ -15,6 +15,7 @@ const Navbar = () => {
 
       </div>
       <div className=''>
+        <input type="text" name="" id="" />
             <button>Search</button>
         </div>
  
