@@ -15,7 +15,7 @@ const Navbar = () => {
 
       </div>
       <div className=''>
-        <input type="text" name="" id="" />
+        <input type="text" className='h-10 border-2 rounded-md border-teal-600' name="" id="" placeholder='Seach Here'/>
             <button>Search</button>
         </div>
  
