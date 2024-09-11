@@ -1,15 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 const Home = () => {
   return (
-<>
-<div>
-  <div>
-    
-  </div>
-</div>
-</>
-  )
-}
+    <div className="w-screen h-screen bg-no-repeat bg-cover bg-center" style={{ backgroundImage: 'url("/images/head.jpeg")' }}>
+      {/* You can add other content here if needed */}
+    </div>
+  );
+};
 
-export default Home
+export default Home;
