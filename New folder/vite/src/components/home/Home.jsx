@@ -16,7 +16,7 @@ const Home = () => {
     <h1>Find Your Stay</h1>
   </div>
 </div>
-hey
+check
 
 
         </div>
