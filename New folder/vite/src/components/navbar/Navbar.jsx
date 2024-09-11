@@ -39,7 +39,7 @@ const Navbar = () => {
             className='h-10 border-2 rounded-md border-teal-600 px-2 w-full sm:w-auto' 
             placeholder='Search Here' 
           />
-          <button className='bg-lime-600 border-2 border-teal-700 ml-3 rounded-md w-20 text-white'>
+          <button className='bg-lime-600 border-2 border-teal-700 ml-3  w-20 text-white hover:bg-blue-600 transition-colors duration-300 rounded-md'>
             Search
           </button>
         </div>
