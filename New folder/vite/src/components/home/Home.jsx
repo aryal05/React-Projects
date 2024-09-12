@@ -13,7 +13,7 @@ const Home = () => {
           </h1>
           <div className='flex justify-center items-center h-screen'>
   <div className="w-72 h-24 flex justify-center items-center font-bold bg-orange-200 text-center rounded-full transition duration-300 hover:bg-orange-400 cursor-pointer">
-    <h1>Find Your Stay</h1>
+    <h1>Find Your Product</h1>
   </div>
 </div>
 
