@@ -5,7 +5,9 @@ import React from 'react'
 const Cate = () => {
   return (
     <>
+      <h1 className='mt-5 font-extralight text-xl flex ml-4 underline'>Categories</h1>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-7">
+      
         <div>
           <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="" />
         </div>
