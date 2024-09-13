@@ -8,7 +8,7 @@ const Des = () => {
     },
     {
       title: 'Popular',
-      description: 'Our products are Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, aliquam.'
+      description: 'Products are popular Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, aliquam.'
     },
     {
       title: 'Demanding',
