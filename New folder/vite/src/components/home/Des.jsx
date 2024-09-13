@@ -12,7 +12,8 @@ const Des = () => {
     },
     {
       title: 'Demanding',
-      description: 'Our products are Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, aliquam.'
+      description: 'Displayed items arre the most demaing ones  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, aliquam.'
+
     }
   ]
 
