@@ -18,7 +18,7 @@ const Home = () => {
           </div>
           <div className='flex justify-center items-center h-screen'>
   <div className="w-72 h-24 flex justify-center items-center mb-9 font-bold bg-orange-200 text-center rounded-full transition duration-300 hover:bg-orange-400 cursor-pointer">
-    <h1>Find Your Product</h1>
+    <h1 className='hover: trasnsition duration-300 hover:translate-x-3'>Find Your Product</h1>
   </div>
 </div>
 

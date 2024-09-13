@@ -3,7 +3,8 @@ import { Outlet } from 'react-router-dom'
 
 import Navbar from './components/navbar/Navbar'
 import Cate from './components/home/Cate'
-import Home from './components/home/Home'
+
+import Des from './components/home/Des'
 
 
 
@@ -12,8 +13,8 @@ const App = () => {
     <>
   <Navbar/>
      <Outlet/>
-
      <Cate/>
+     <Des/>
      
      
     
