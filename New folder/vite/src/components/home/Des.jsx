@@ -7,11 +7,11 @@ const Des = () => {
       description: 'Our products are Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, aliquam.'
     },
     {
-      title: 'Top Rated',
+      title: 'Popular',
       description: 'Our products are Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, aliquam.'
     },
     {
-      title: 'Top Rated',
+      title: 'Demanding',
       description: 'Our products are Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, aliquam.'
     }
   ]
@@ -32,7 +32,7 @@ const Des = () => {
               className='w-full sm:w-[45%] lg:w-[30%] flex-grow m-2 p-5 border-gray-400 border-2 transition-all'
             >
               <div>
-                <h1 className='font-semibold text-lg sm:text-xl'>{product.title}</h1>
+                <h1 className='flex items-center justify-center text-gray-500 font-bold text-xl sm:text-2xl mt-4 hover:underline cursor-pointer hover:text-teal-600 transition duration-300'>{product.title}</h1>
                 <p className='text-sm sm:text-base'>{product.description}</p>
               </div>
             </div>
