@@ -18,16 +18,15 @@ const Home = () => {
                 <span className='text-cyan-950'>On Everything</span>
               </h1>
               {/* Responsive Paragraph */}
-              <p className="flex justify-center md:w-[700px] text-base md:text-xl mt-5 md:mt-11 text-slate-500">
+              <p className="md:w-[600px] text-base md:text-xl mt-5 md:mt-11 text-slate-500 text-center">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione harum dolores consequuntur magni. Nesciunt ratione optio maxime!
               </p>
 
               {/* Shop Button */}
-             
-             <button className="bg-red-600 text-white border-red-600 py-2 px-5 mt-6 md:mt-8 text-lg rounded-md hover:bg-transparent hover:text-red-600  duration-300">
+              <button className="bg-red-600 w-[150px] text-white border-2 border-red-600 py-2 px-5 mt-6 md:mt-8 text-lg rounded-md hover:bg-transparent hover:text-red-600 hover:border-red-600 duration-300">
                 Shop
               </button>
-            
+
             </div>
           </div>
         </div>
