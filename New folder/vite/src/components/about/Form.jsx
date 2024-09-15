@@ -3,7 +3,7 @@ import React from 'react'
 const Form = () => {
   return (
     <>
-    <div class="container mx-auto my-20 w-1/3 border border-purple-500 bg-white">
+    <div class="container mx-auto my-20 w-1/3 border-2 border-purple-500 bg-white">
   <div class="p-5 space-y-5 shadow-xl">
     <h4 class="text-center text-3xl">Contact Us</h4>
 
@@ -39,7 +39,7 @@ const Form = () => {
       <input
         type="submit"
         value="Send Message"
-        class="focus:outline-none mt-5 bg-purple-500 px-4 py-2 text-white font-bold w-full"
+        class="focus:outline-none  mt-5 bg-purple-500 px-4 py-2 text-white font-bold w-full hover:bg-purple-950 duration-500  hover:underline cursor-pointer"
       />
     </form>
   </div>
