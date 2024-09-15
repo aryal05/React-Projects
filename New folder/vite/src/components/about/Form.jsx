@@ -39,7 +39,7 @@ const Form = () => {
       <input
         type="submit"
         value="Send Message"
-        class="focus:outline-none  mt-5 bg-purple-500 px-4 py-2 text-white font-bold w-full hover:bg-purple-950 duration-500  hover:underline cursor-pointer"
+        class="focus:outline-none  mt-5 bg-purple-500 px-4 py-2 text-white  hover:text-blue-400 font-bold w-full hover:bg-blue-700 duration-500  hover:underline cursor-pointer"
       />
     </form>
   </div>
