@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';  // Import Link from react-router-dom
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -58,28 +59,26 @@ const Navbar = () => {
             isMenuOpen ? 'flex' : 'hidden'
           } sm:flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-9 text-gray-300 mt-4 sm:mt-0`}
         >
-          <a
-            href="/"
+          <Link
+            to="/"
             className="border-2 border-transparent hover:border-gray-400 hover:bg-slate-500 transition-colors duration-300 rounded-md px-2 py-1"
           >
             Home
-          </a>
-          <a
-            href="/about"
+          </Link>
+          <Link
+            to="/about"
             className="border-2 border-transparent hover:border-gray-400 hover:bg-slate-500 transition-colors duration-300 rounded-md px-2 py-1"
           >
             About
-          </a>
-          <a
-            href="/contact"
+          </Link>
+          <Link
+            to="/contact"
             className="border-2 border-transparent hover:border-gray-400 hover:bg-slate-500 transition-colors duration-300 rounded-md px-2 py-1"
           >
             Contact
-          </a>
+          </Link>
         </div>
       </div>
-
-    
     </>
   );
 };
