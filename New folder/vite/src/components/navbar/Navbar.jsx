@@ -14,7 +14,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <div className='text-black'>
-          <h1>Logo Here</h1>
+         <img src="/images/logo.png" className='w-[250px]' alt="" />
         </div>
 
         {/* Search Bar (always visible) */}

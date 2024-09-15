@@ -9,7 +9,7 @@ const Home = () => {
           className="w-screen h-screen bg-no-repeat bg-cover bg-center"
           style={{ backgroundImage: 'url("/images/slider-bg.jpg")' }}
         >
-          <div className="flex h-full leading-7">
+          <div className="flex h-full leading-7 ml-24 mt-7">
             <div className="text-center px-5 md:px-0">
               {/* Responsive Title */}
               <h1 className="text-2xl md:text-4xl lg:text-5xl font-black mt-10 md:mt-20 leading-tight duration-300">
