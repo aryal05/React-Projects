@@ -7,7 +7,7 @@ const About = () => {
       <div className="relative">
         <img className='m-7 p-7' src="/images/about.jpeg" alt="About" />
         <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-black text-3xl font-bold p-4 rounded hover:bg-sky-900 cursor-pointer duration-500">
+          <h1 className="text-black text-3xl font-bold p-4 rounded-full hover:bg-blue-700 cursor-pointer duration-500">
             About Us 
             <span className='font-extralight hover:underline'>
               <Link to="/">/Home</Link> {/* Use Link for navigation */}

@@ -10,10 +10,10 @@ const Navbar = () => {
 
   return (
     <>
-      <div className='flex flex-col sm:flex-row items-center justify-between bg-sky-950 p-4 sm:p-3'>
+      <div className='flex flex-col sm:flex-row items-center justify-between bg-white text-black p-4 sm:p-3'>
 
         {/* Logo */}
-        <div className='text-gray-300'>
+        <div className='text-black'>
           <h1>Logo Here</h1>
         </div>
 
@@ -57,7 +57,7 @@ const Navbar = () => {
         <div
           className={`${
             isMenuOpen ? 'flex' : 'hidden'
-          } sm:flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-9 text-gray-300 mt-4 sm:mt-0`}
+          } sm:flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-9 text-black mt-4 sm:mt-0`}
         >
           <Link
             to="/"

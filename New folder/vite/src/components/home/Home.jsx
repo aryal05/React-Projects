@@ -7,22 +7,29 @@ const Home = () => {
         {/* Background Image */}
         <div
           className="w-screen h-screen bg-no-repeat bg-cover bg-center"
-          style={{ backgroundImage: 'url("/images/nbg.jpg")' }}
+          style={{ backgroundImage: 'url("/images/slider-bg.jpg")' }}
         >
-          <div className="flex items-center justify-center h-full">
+          <div className="flex h-full leading-7">
             <div className="text-center px-5 md:px-0">
               {/* Responsive Title */}
-              <h1 className="text-white text-2xl md:text-4xl lg:text-5xl font-bold hover:text-black mt-10 md:mt-20 hover:underline cursor-pointer inline-block duration-300">
-                Welcome To Our Self Service
+              <h1 className="text-2xl md:text-4xl lg:text-5xl font-black mt-10 md:mt-20 leading-tight duration-300">
+                <span className='text-red-600'>Sale 20% Off</span>
+                <br />
+                <span className='text-cyan-950'>On Everything</span>
               </h1>
               {/* Responsive Paragraph */}
-              <p className="w-full md:w-[700px] text-base md:text-xl mt-5 md:mt-11 text-slate-500">
+              <p className="flex justify-center md:w-[700px] text-base md:text-xl mt-5 md:mt-11 text-slate-500">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione harum dolores consequuntur magni. Nesciunt ratione optio maxime!
               </p>
+
+              {/* Shop Button */}
+             
+             <button className="bg-red-600 text-white border-red-600 py-2 px-5 mt-6 md:mt-8 text-lg rounded-md hover:bg-transparent hover:text-red-600  duration-300">
+                Shop
+              </button>
+            
             </div>
           </div>
-
-         
         </div>
 
         <div>
