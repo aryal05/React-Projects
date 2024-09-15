@@ -5,7 +5,7 @@ const Form = () => {
     <>
     <div class="container mx-auto my-20 w-1/3 border-2 border-purple-500 bg-white">
   <div class="p-5 space-y-5 shadow-xl">
-    <h4 class="text-center text-3xl">Contact Us</h4>
+    <h4 class="text-center text-3xl font-bold cursor-pointer hover:text-gray-400 hover:underline duration-500 ">Contact Us</h4>
 
     <form>
       <div class="grid grid-cols-2 gap-5">
