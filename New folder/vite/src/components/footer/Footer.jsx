@@ -1,25 +1,24 @@
 import React from 'react'
 
 const Footer = () => {
-  const regretsData = [
-    { id: 1, title: "info", infos: ["No:1", "No:2", "No:3", "No:4", "No:5"] },
-    { id: 1, title: "info", infos: ["No:1", "No:2", "No:3", "No:4", "No:5"] },
-    { id: 1, title: "info", infos: ["No:1", "No:2", "No:3", "No:4", "No:5"] },
-    { id: 1, title: "info", infos: ["No:1", "No:2", "No:3", "No:4", "No:5"] },
-    { id: 1, title: "info", infos: ["No:1", "No:2", "No:3", "No:4", "No:5"] },
+  const Data = [
+    { id: 1, title: "About Us", infos: ["Company", "History","Meet the Team","Employee Handbook","Careers"] },
+    { id: 1, title: "Our Services", infos: ["Company", "History","Meet the Team","Employee Handbook","Careers"] },
+    { id: 1, title: "Helpful Links", infos: ["Company", "History","Meet the Team","Employee Handbook","Careers"] },
+    { id: 1, title: "Contact Us", infos: ["Company", "History","Meet the Team","Employee Handbook","Careers"]},
+
   ];
 
   return (
     <>
-      <div className='bg-slate-600 w-full flex justify-center'>
+      <div className='bg-cyan-950 w-full flex justify-center text-white font-extralight'>
         <div>
-          <h1 className='font-extralight text-xl text-yellow-400 text-center'>Types of Infos</h1>
           <div className="flex justify-around space-x-12">
-            {regretsData.map((regretSection) => (
-              <div key={regretSection.id} className="p-4">
-                <h1 className="text-xl font-bold">{regretSection.title}</h1>
-                <ul className="mt-4">
-                  {regretSection.infos.map((regret, index) => (
+            {Data.map((Section) => (
+              <div key={Section.id} className="p-4">
+                <h1 className="text-xl font-bold">{Section.title}</h1>
+                <ul className="mt-4 text-white font-extralight">
+                  {Section.infos.map((regret, index) => (
                     <li key={index}>
                       <a href="#">{regret}</a>
                     </li>
