@@ -5,7 +5,7 @@ const Footer = () => {
     { id: 1, title: "About Us", infos: ["Company", "History","Meet the Team","Employee Handbook","Careers"] },
     { id: 1, title: "Our Services", infos: ["Web Development","Web Design","Marketing", "Google Ads"] },
     { id: 1, title: "Helpful Links", infos: ["FAQs","Support","Live Chat,"] },
-    { id: 1, title: "Contact Us", infos: ["Company", "History","Meet the Team","Employee Handbook","Careers"]},
+    { id: 1, title: "Contact Us", infos: ["john@doe.com","0123456789","213 Lane, NeyTown, DipxTaxManOG"]},
 
   ];
 
@@ -27,8 +27,39 @@ const Footer = () => {
               </div>
             ))}
           </div>
-        </div>
+          <hr  className="border-gray-600"/>
+          <div class="pt-6">
+      <div class="text-center sm:flex sm:justify-between sm:text-left">
+        <p class="text-sm text-gray-400">
+          <span class="block sm:inline">All rights reserved.</span>
+
+          <a
+            class="inline-block text-teal-500 underline transition hover:text-teal-500/75"
+            href="/"
+          >
+            Terms & Conditions
+          </a>
+
+          <span>&middot;</span>
+
+          <a
+            class="inline-block text-teal-500 underline transition hover:text-teal-500/75"
+            href="/"
+          >
+            Privacy Policy
+          </a>
+        </p>
+
+        <p class="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
+          &copy; 2022 Company Name
+        </p>
       </div>
+    </div>
+  </div>
+        </div>
+
+     
+
     </>
   );
 }
