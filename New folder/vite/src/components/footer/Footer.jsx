@@ -16,12 +16,15 @@ const Footer = () => {
           <div className="flex justify-around space-x-12">
             {Data.map((Section) => (
               <div key={Section.id} className="p-4 mt-6">
+                
                 <h1 className="text-xl font-bold">{Section.title}</h1>
+                
                 <ul className="mt-4 text-white font-extralight leading-9">
+                  
                   {Section.infos.map((regret, index) => (
                     <li key={index}>
                       <a href="#">{regret}</a>
-                    </li>
+                    </li> 
                   ))}
                 </ul> 
               </div>
