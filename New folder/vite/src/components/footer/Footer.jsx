@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   const Data = [
     { id: 1, title: "About Us", infos: ["Company", "History","Meet the Team","Employee Handbook","Careers"] },
-    { id: 1, title: "Our Services", infos: ["Company", "History","Meet the Team","Employee Handbook","Careers"] },
+    { id: 1, title: "Our Services", infos: ["Web Development","Web Design","Marketing", "Google Ads"] },
     { id: 1, title: "Helpful Links", infos: ["Company", "History","Meet the Team","Employee Handbook","Careers"] },
     { id: 1, title: "Contact Us", infos: ["Company", "History","Meet the Team","Employee Handbook","Careers"]},
 
