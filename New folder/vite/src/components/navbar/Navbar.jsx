@@ -66,15 +66,16 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            to="/about"
-            className="border-2 border-transparent hover:border-gray-400 hover:bg-slate-500 transition-colors duration-300 rounded-md px-2 py-1"
-          >
-               <Link
             to="/shop"
             className="border-2 border-transparent hover:border-gray-400 hover:bg-slate-500 transition-colors duration-300 rounded-md px-2 py-1"
           >
            Shop
           </Link>
+          <Link
+            to="/about"
+            className="border-2 border-transparent hover:border-gray-400 hover:bg-slate-500 transition-colors duration-300 rounded-md px-2 py-1"
+          >
+          
             About
           </Link>
           <Link
