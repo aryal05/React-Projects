@@ -15,7 +15,12 @@ const Shop = () => {
               </button>
         </div>
         <div>
-            <img src="images/shoes.jpg" className='w-[800px] justify-center mt-10 rounded-full' alt="" />
+        <img 
+  src="images/shoes.jpg" 
+  className="w-[800px] justify-center mt-10 rounded-full hover:scale-90 hover:shadow-xl hover:shadow-green-500 transition-transform duration-300 ease-in-out" 
+  alt="Shoes" 
+/>
+
         </div>
     </div>
 </div>
