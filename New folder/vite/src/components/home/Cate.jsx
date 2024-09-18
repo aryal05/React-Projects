@@ -20,7 +20,7 @@ const Cate = () => {
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mt-7">
         {categories.map((category) => (
           <div key={category.id} className="bg-white rounded-lg shadow-md p-4">
-            <img className="h-auto max-w-full rounded-lg" src={category.imageUrl} alt={category.name} />
+            <img className="h-auto max-w-full rounded-lg hover:scale-90 ease-in-out transition-transform duration-300" src={category.imageUrl} alt={category.name} />
             <h1 className='flex items-center justify-center font-extralight text-xl sm:text-2xl mt-4 hover:underline cursor-pointer hover:text-teal-600 transition duration-300'>
               {category.name}
             </h1>
