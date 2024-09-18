@@ -26,6 +26,28 @@ const Shop = () => {
     </div>
 </div>
 
+<div className="flex flex-col md:flex-row h-screen mt-32">
+      <div className="flex-1 bg-blue-500 flex items-center justify-center">
+        <div className="text-center text-white">
+          <h1 className="text-4xl font-bold">Innovate with Us</h1>
+          <p className="mt-2">Discover new Products.</p>
+          <a
+            href="https://spacema-dev.com/free-tailwind-css-templates/"
+            className="mt-4 inline-block bg-white text-blue-500 py-2 hover:scale-90 px-4 rounded hover:bg-blue-700 hover:text-white transition-transform duration-300 ease-in-out"
+          >
+            Here You Go
+          </a>
+        </div>
+      </div>
+      <div
+        className="flex-1 bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1715594564891-b4aecdd6e05e?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+        }}
+      ></div>
+    </div>
+
 </>
   )
 }
