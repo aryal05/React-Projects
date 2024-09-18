@@ -21,6 +21,7 @@ const Shop = () => {
   alt="Shoes" 
 />
 
+
         </div>
     </div>
 </div>
