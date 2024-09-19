@@ -14,9 +14,17 @@ const About = () => {
      
       </div>
       <div className='flex items-center justify-center'>
-          <div className=' border-2 border-bg-gray-800'>
-            <h1>Free Delivery</h1>
-            <p>Here We provide free Delivery</p>
+          <div className=' border-2 border-bg-gray-800 mt-20 bg-cyan-950 rounded-md h-32 items-center w-80 justify-center text-white'>
+            <h1 className='font-bold text-center text-xl mt-9' > Free Delivery</h1>
+            <p className='text-center'>Here We provide free Delivery</p>
+          </div>
+          <div className=' border-2 border-bg-gray-800 mt-20 bg-cyan-950 rounded-md h-32 items-center w-80 justify-center text-white'>
+            <h1 className='font-bold text-center text-xl mt-9' > Free Delivery</h1>
+            <p className='text-center'>Here We provide free Delivery</p>
+          </div>
+          <div className=' border-2 border-bg-gray-800 mt-20 bg-cyan-950 rounded-md h-32 items-center w-80 justify-center text-white'>
+            <h1 className='font-bold text-center text-xl mt-9' > Free Delivery</h1>
+            <p className='text-center'>Here We provide free Delivery</p>
           </div>
         </div>
       {/* <hr /> */}
