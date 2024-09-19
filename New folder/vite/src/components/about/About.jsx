@@ -4,7 +4,7 @@ import Items from './Items';
 
 const About = () => {
   return (
-    <><div className='bg-red-600 text-white h-24 flex items-center justify-center text-4xl font-bold'>
+    <><div className='bg-red-500 text-white h-24 flex items-center justify-center text-4xl font-bold'>
       <h1 className='font-bold text-5xl'>About Us</h1>
     </div>
       <div className="relative flex items-center justify-center mt-9">
