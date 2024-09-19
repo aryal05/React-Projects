@@ -16,15 +16,16 @@ const About = () => {
       <div className='flex items-center justify-center'>
           <div className=' border-2 border-bg-gray-800 mt-20 bg-cyan-950 rounded-md h-32 items-center w-80 justify-center text-white'>
             <h1 className='font-bold text-center text-xl mt-9' > Free Delivery</h1>
-            <p className='text-center'>Here We provide free Delivery</p>
+            <p className='text-center'>Here We provide free Delivery variations available</p>
           </div>
           <div className=' border-2 border-bg-gray-800 mt-20 bg-cyan-950 rounded-md h-32 items-center w-80 justify-center text-white'>
-            <h1 className='font-bold text-center text-xl mt-9' > Free Delivery</h1>
-            <p className='text-center'>Here We provide free Delivery</p>
+            <h1 className='font-bold text-center text-xl mt-9' > Free Shiping</h1>
+            <p className='text-center'>variations of passages of Lorem Ipsum available</p>
           </div>
           <div className=' border-2 border-bg-gray-800 mt-20 bg-cyan-950 rounded-md h-32 items-center w-80 justify-center text-white'>
-            <h1 className='font-bold text-center text-xl mt-9' > Free Delivery</h1>
-            <p className='text-center'>Here We provide free Delivery</p>
+            <h1 className='font-bold text-center text-xl mt-9' > Best Quality</h1>
+            <p className='text-center'>variations of passages of Lorem Ipsum available</p>
+
           </div>
         </div>
       {/* <hr /> */}
