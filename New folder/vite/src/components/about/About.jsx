@@ -4,7 +4,9 @@ import Items from './Items';
 
 const About = () => {
   return (
-    <>
+    <><div className='bg-red-600 text-white h-24 flex items-center justify-center text-4xl font-bold'>
+      <h1>About Us</h1>
+    </div>
       <div className="relative">
         <img className='m-7 p-7' src="/images/about.jpeg" alt="About" />
         <div className="absolute inset-0 flex items-center justify-center">
