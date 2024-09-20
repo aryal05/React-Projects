@@ -13,10 +13,10 @@ const Home = () => {
           <div className="flex h-full items-center justify-center px-4 md:px-8 lg:px-16">
             <motion.div
               className="text-center"
-              // Animation: smooth slide up from the bottom
-              initial={{ y: '100vh', opacity: 0 }} // Start from the bottom and invisible
-              animate={{ y: 0, opacity: 1 }} // Move to original position and become visible
-              transition={{ type: 'tween', ease: 'easeInOut', duration: 1.8 }} // Smooth ease and longer duration
+              // Animation: slide up from the bottom
+              initial={{ y: '100vh' }} // Start from bottom (off-screen)
+              animate={{ y: 0 }} // End at original position
+              transition={{ type: 'spring', stiffness: 50, damping: 10, duration: 1.5 }} // Smooth transition
             >
               {/* Responsive Title */}
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight">
