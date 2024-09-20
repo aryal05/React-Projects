@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';  // Import Link from react-router-dom
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion'; // Import motion from framer-motion
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -53,11 +54,16 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Navigation Links */}
-        <div
+        {/* Navigation Links with Motion */}
+        <motion.div
           className={`${
             isMenuOpen ? 'flex' : 'hidden'
           } sm:flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-9 text-black mt-4 sm:mt-0`}
+          
+          // Motion properties for smoother sliding in from the left
+          initial={{ x: '-100vw' }}
+          animate={{ x: 0 }}
+          transition={{ type: 'tween', ease: 'easeInOut', duration: 1.2 }}
         >
           <Link
             to="/"
@@ -75,7 +81,6 @@ const Navbar = () => {
             to="/about"
             className="border-2 border-transparent hover:border-gray-400 hover:bg-slate-500 transition-colors duration-300 rounded-md px-2 py-1"
           >
-          
             About
           </Link>
           <Link
@@ -84,8 +89,7 @@ const Navbar = () => {
           >
             Contact
           </Link>
-
-        </div>
+        </motion.div>
       </div>
     </>
   );
