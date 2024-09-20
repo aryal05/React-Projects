@@ -1,8 +1,8 @@
 import React from 'react';
+import { motion } from 'framer-motion'; // Import motion from framer-motion
 
 const Home = () => {
   return (
-     
     <>
       <div>
         {/* Background Image */}
@@ -11,13 +11,20 @@ const Home = () => {
           style={{ backgroundImage: 'url("/images/slider-bg.jpg")' }}
         >
           <div className="flex h-full items-center justify-center px-4 md:px-8 lg:px-16">
-            <div className="text-center">
+            <motion.div
+              className="text-center"
+              // Animation: smooth slide up from the bottom
+              initial={{ y: '100vh', opacity: 0 }} // Start from the bottom and invisible
+              animate={{ y: 0, opacity: 1 }} // Move to original position and become visible
+              transition={{ type: 'tween', ease: 'easeInOut', duration: 1.8 }} // Smooth ease and longer duration
+            >
               {/* Responsive Title */}
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight">
                 <span className='text-red-600'>Sale 20% Off</span>
                 <br />
                 <span className='text-cyan-950'>On Everything</span>
               </h1>
+
               {/* Responsive Paragraph */}
               <p className="text-base md:text-lg lg:text-xl mt-5 lg:mt-8 text-slate-500 mx-auto md:w-3/4 lg:w-1/2">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione harum dolores consequuntur magni. Nesciunt ratione optio maxime!
@@ -28,12 +35,11 @@ const Home = () => {
                 Shop
               </button>
 
-            </div>
+            </motion.div>
           </div>
         </div>
- 
+
         {/* Additional Content */}
-      
       </div>
     </>
   );
