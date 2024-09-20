@@ -28,20 +28,39 @@ const About = () => {
         </motion.h1>
       </div>
       <div className='flex items-center justify-center space-x-4'>
-          <div className=' border-2 border-bg-gray-800 mt-20 bg-cyan-950 rounded-md h-32 items-center w-80 justify-center text-white'>
-            <h1 className='font-bold text-center text-xl mt-9' > Free Delivery</h1>
-            <p className='text-center'>Here We provide free Delivery variations available</p>
-          </div>
-          <div className=' border-2 border-bg-gray-800 mt-20 bg-cyan-950 rounded-md h-32 items-center w-80 justify-center text-white'>
-            <h1 className='font-bold text-center text-xl mt-9' > Free Shiping</h1>
-            <p className='text-center'>variations of passages of Lorem Ipsum available</p>
-          </div>
-          <div className=' border-2 border-bg-gray-800 mt-20 bg-cyan-950 rounded-md h-32 items-center w-80 justify-center text-white'>
-            <h1 className='font-bold text-center text-xl mt-9' > Best Quality</h1>
-            <p className='text-center'>variations of passages of Lorem Ipsum available</p>
+      {/* First Feature: Free Delivery */}
+      <motion.div
+        className='border-2 border-bg-gray-800 mt-20 bg-cyan-950 rounded-md h-32 items-center w-80 justify-center text-white'
+        initial={{ y: '-100vh' }}  // Start off-screen (above)
+        animate={{ y: 0 }}  // Slide down to the final position
+        transition={{ type: 'spring', stiffness: 50, delay: 0.1 }}  // Add spring animation and delay
+      >
+        <h1 className='font-bold text-center text-xl mt-9'>Free Delivery</h1>
+        <p className='text-center'>Here We provide free Delivery variations available</p>
+      </motion.div>
 
-          </div>
-        </div>
+      {/* Second Feature: Free Shipping */}
+      <motion.div
+        className='border-2 border-bg-gray-800 mt-20 bg-cyan-950 rounded-md h-32 items-center w-80 justify-center text-white'
+        initial={{ y: '-100vh' }}  // Start off-screen (above)
+        animate={{ y: 0 }}  // Slide down to the final position
+        transition={{ type: 'spring', stiffness: 50, delay: 0.2 }}  // Add a slight delay
+      >
+        <h1 className='font-bold text-center text-xl mt-9'>Free Shipping</h1>
+        <p className='text-center'>Variations of passages of Lorem Ipsum available</p>
+      </motion.div>
+
+      {/* Third Feature: Best Quality */}
+      <motion.div
+        className='border-2 border-bg-gray-800 mt-20 bg-cyan-950 rounded-md h-32 items-center w-80 justify-center text-white'
+        initial={{ y: '-100vh' }}  // Start off-screen (above)
+        animate={{ y: 0 }}  // Slide down to the final position
+        transition={{ type: 'spring', stiffness: 50, delay: 0.3 }}  // Add a slight delay
+      >
+        <h1 className='font-bold text-center text-xl mt-9'>Best Quality</h1>
+        <p className='text-center'>Variations of passages of Lorem Ipsum available</p>
+      </motion.div>
+    </div>
       {/* <hr /> */}
 <Items/>
 
