@@ -1,17 +1,31 @@
 import React from 'react';
 import { Link } from 'react-router-dom';  // Import Link from react-router-dom
 import Items from './Items';
-
+import { motion } from 'framer-motion'
 const About = () => {
   return (
-    <><div className='bg-red-500 text-white h-24 flex items-center justify-center text-4xl font-bold'>
-      <h1 className='font-bold text-5xl'>About Us</h1>
-    </div>
+    <>
+     <div className='bg-red-500 text-white h-24 flex items-center justify-center text-4xl font-bold'>
+        <motion.h1
+          className='font-bold text-5xl'
+          initial={{ x: '-100vw' }}  // Start off-screen to the left
+          animate={{ x: 0 }}  // Move to the final position
+          transition={{ type: 'spring', stiffness: 50 }}  // Add spring animation
+        >
+          About Us
+        </motion.h1>
+      </div>
+
+      {/* "Why Shop With Us" Header */}
       <div className="relative flex items-center justify-center mt-9">
-        {/* <img className='m-7 p-7' src="/images/about.jpeg" alt="About" /> */}
-        <h1 className='font-bold text-4xl'>Why Shop With Us</h1>
-      
-     
+        <motion.h1
+          className='font-bold text-4xl'
+          initial={{ x: '-100vw' }}  // Start off-screen to the left
+          animate={{ x: 0 }}  // Move to the final position
+          transition={{ type: 'spring', stiffness: 50, delay: 0.2 }}  // Add delay for staggered animation
+        >
+          Why Shop With Us
+        </motion.h1>
       </div>
       <div className='flex items-center justify-center space-x-4'>
           <div className=' border-2 border-bg-gray-800 mt-20 bg-cyan-950 rounded-md h-32 items-center w-80 justify-center text-white'>
