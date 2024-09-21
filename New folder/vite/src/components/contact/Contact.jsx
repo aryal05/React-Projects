@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Form from './Form'
+import Post from './Post'
 
 const Contact = () => {
   return (
@@ -17,6 +18,8 @@ const Contact = () => {
       </div>
 
       <Form />
+      <Post/>
+      
     </>
   )
 }
