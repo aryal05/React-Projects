@@ -3,7 +3,7 @@ import React from 'react'
 const Post = () => {
   return (
     <div className='flex justify-around items-center border-2 bg-cyan-950 rounded-xl text-white'>
-      <div className='item-center'>
+      <div className='item-center border-2 border-slate-600'>
       <h1 className='text-3xl font-bold mb-4 underline decoration-slate-600'>Reason Behind</h1>
         <p className='w-80'>Explore the items you need with us with more than 5 years of trust from the people and relaible  service.
            
