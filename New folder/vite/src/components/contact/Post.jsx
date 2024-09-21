@@ -4,7 +4,7 @@ const Post = () => {
   return (
     <div className='flex justify-around border-2'>
       <div className=''>
-        <h1>Post Title</h1>
+      <h1>Post Title</h1>
         <p>Explore the items you need with us with more than 5 years of trust from the people and relaible  service</p>.
 
       </div>
