@@ -4,15 +4,15 @@ const Post = () => {
   return (
     <div className='flex justify-around items-center border-2'>
       <div className='item-center'>
-      <h1>Post Title</h1>
-        <p className='w-72'>Explore the items you need with us with more than 5 years of trust from the people and relaible  service.
+      <h1 className='text-3xl font-bold '>Reason Behind</h1>
+        <p className='w-80'>Explore the items you need with us with more than 5 years of trust from the people and relaible  service.
            
 Explore the items you need with us, backed by over 5 years of trust from our valued customers and reliable service. We offer a diverse range of high-quality products designed to meet your every need. With a commitment to excellence, we ensure fast delivery, exceptional customer support, and a seamless shopping experience that you can rely on, time and time again.
- Join our community of satisfied shoppers and discover why we are a trusted name in the industry. </p>.
+ Join our community of satisfied shoppers and discover why we are a trusted name in the industry. </p>
 
       </div>
       <div>
-        <img src="images/bg.avif" alt="" />
+        <img src="images/bg.avif"  className="mb-9 justify-center mt-10 rounded-md hover:scale-90 hover:shadow-xl hover:shadow-gray-900 transition-transform duration-300 ease-in-out" alt="" />
       </div>
     </div>
   )
