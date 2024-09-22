@@ -4,15 +4,18 @@ const Des = () => {
   const products = [
     {
       title: 'Top Rated',
-      description: 'Our products are Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, aliquam.'
+      description: 'Our products are Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, aliquam.',
+      img:"/images/first.jpg"
     },
     {
       title: 'Popular',
-      description: 'Products are popular Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, aliquam.'
+      description: 'Products are popular Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, aliquam.',
+      img:"/images/second.jpg"
     },
     {
       title: 'Demanding',
-      description: 'Displayed items arre the most demaing ones  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, aliquam.'
+      description: 'Displayed items arre the most demaing ones  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, aliquam.',
+      img:"/images/third.jpg"
 
     }
   ]
@@ -34,6 +37,7 @@ const Des = () => {
             >
               <div>
                 <h1 className='flex items-center justify-center text-gray-500 font-bold text-xl sm:text-2xl mt-4 hover:underline cursor-pointer hover:text-teal-600 transition duration-300'>{product.title}</h1>
+                <img src={product.img} className='w-80 ' alt="" />
                 <p className='text-sm sm:text-base'>{product.description}</p>
               </div>
             </div>
