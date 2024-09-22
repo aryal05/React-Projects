@@ -36,8 +36,8 @@ const Des = () => {
               className='w-full sm:w-[45%] lg:w-[30%] flex-grow m-2 p-5 border-gray-400 border-2 transition-all'
             >
               <div>
-                <h1 className='flex items-center justify-center text-gray-500 font-bold text-xl sm:text-2xl mt-4 hover:underline cursor-pointer hover:text-teal-600 transition duration-300'>{product.title}</h1>
-                <img src={product.img} className='w-80 ' alt="" />
+                <h1 className='flex items-center justify-center text-gray-500 font-bold text-xl sm:text-2xl mb-4 underline decoration-slate-600 hover:underline cursor-pointer hover:text-teal-600 transition duration-300'>{product.title}</h1>
+                <img src={product.img} className='w-80 h-80 ml-14' alt="" />
                 <p className='text-sm sm:text-base'>{product.description}</p>
               </div>
             </div>
