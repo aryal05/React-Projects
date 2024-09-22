@@ -34,8 +34,7 @@ const Items = () => {
   return (
 <>
 <h1 className='flex justify-center mt-28 font-extralight text-3xl underline'>Products</h1>
-    <div className="p-24 flex flex-wrap items-center justify-center cuso  
-    \
+    <div className="p-24 flex flex-wrap items-center justify-center cursor-pointer
     ">
       
       {itemsData.map((item) => (
