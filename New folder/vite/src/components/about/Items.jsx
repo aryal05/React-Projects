@@ -33,8 +33,10 @@ const itemsData = [
 const Items = () => {
   return (
 <>
-<h1 className='flex justify-center mt-28 font-extralight text-3xl underline'>Plants Here</h1>
-    <div className="p-24 flex flex-wrap items-center justify-center">
+<h1 className='flex justify-center mt-28 font-extralight text-3xl underline'>Products</h1>
+    <div className="p-24 flex flex-wrap items-center justify-center cuso  
+    \
+    ">
       
       {itemsData.map((item) => (
         <div key={item.id} className={`flex-shrink-0 m-6 relative overflow-hidden ${item.bgColor} rounded-lg max-w-xs shadow-lg`}>
