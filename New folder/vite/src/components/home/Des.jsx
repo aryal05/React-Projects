@@ -29,16 +29,16 @@ const Des = () => {
         </h1>
 
         {/* Flex container for product boxes */}
-        <div className='flex flex-wrap justify-start mt-10'>
+        <div className='flex flex-wrap justify-start mt-10 bg-neutral-400'>
           {products.map((product, index) => (
             <div
               key={index}
-              className='w-full sm:w-[45%] lg:w-[30%] flex-grow m-2 p-5 border-gray-400 border-2 transition-all'
+              className='w-full sm:w-[45%] lg:w-[30%] flex-grow m-2 p-5 border-white border-l transition-all'
             >
-              <div>
+              <div className=''>
                 <h1 className='flex items-center justify-center text-gray-500 font-bold text-xl sm:text-2xl mb-4 underline decoration-slate-600 hover:underline cursor-pointer hover:text-teal-600 transition duration-300'>{product.title}</h1>
                 <img src={product.img} className='w-80 h-80 ml-14 rounded-full hover:scale-90 hover:shadow-xl hover:shadow-green-500 transition-transform duration-300 ease-in-out' alt="" />
-                <p className='text-sm sm:text-base mt-4'>{product.description}</p>
+                <p className='text-sm sm:text-base mt-4 '>{product.description}</p>
               </div>
             </div>
           ))}
