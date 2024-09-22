@@ -44,7 +44,7 @@ const Footer = () => {
 
           <hr className="border-gray-600" />
 
-          <div className="pt-6">
+          <div className="pt-6 mb-7">
             <div className="text-center sm:flex sm:justify-between sm:text-left">
               <p className="text-sm text-gray-400">
                 <span className="block sm:inline">All rights reserved.</span>
