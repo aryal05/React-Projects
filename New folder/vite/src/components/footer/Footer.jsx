@@ -17,12 +17,13 @@ const Footer = () => {
 
   return (
     <>
-      <div className='bg-cyan-950 w-full flex justify-center text-white font-extralight'>
-        <div>
-          <div className="flex justify-around space-x-12">
+      <div className="bg-cyan-950 w-full flex justify-center text-white font-extralight">
+        <div className="w-full max-w-screen-xl px-4 sm:px-6 lg:px-8">
+          {/* Section for lists */}
+          <div className="flex flex-col sm:flex-row sm:justify-around sm:space-x-12 mt-6">
             {Data.map((Section) => (
-              <div key={Section.id} className="p-4 mt-6">
-                <h1 className="text-xl font-bold">{Section.title}</h1>
+              <div key={Section.id} className="p-4 mt-6 sm:mt-0">
+                <h1 className="text-lg sm:text-xl font-bold">{Section.title}</h1>
                 <ul className="mt-4 text-white font-extralight leading-9">
                   {Section.infos.map((info, index) => (
                     <motion.li
@@ -42,21 +43,23 @@ const Footer = () => {
             ))}
           </div>
 
-          <hr className="border-gray-600" />
+          {/* Horizontal rule */}
+          <hr className="border-gray-600 my-6" />
 
+          {/* Footer bottom section */}
           <div className="pt-6 mb-7">
             <div className="text-center sm:flex sm:justify-between sm:text-left">
               <p className="text-sm text-gray-400">
                 <span className="block sm:inline">All rights reserved.</span>
                 <a
-                  className="inline-block text-teal-500 underline transition hover:text-teal-500/75"
+                  className="inline-block text-teal-500 underline transition hover:text-teal-500/75 ml-2"
                   href="/"
                 >
                   Terms & Conditions
                 </a>
-                <span>&middot;</span>
+                <span className="hidden sm:inline-block">&middot;</span>
                 <a
-                  className="inline-block text-teal-500 underline transition hover:text-teal-500/75"
+                  className="inline-block text-teal-500 underline transition hover:text-teal-500/75 ml-2"
                   href="/"
                 >
                   Privacy Policy
