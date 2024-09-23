@@ -11,17 +11,17 @@ const Form = () => {
   return (
     <>
       <div
-        className={`container mx-auto my-20 w-1/3 border-2 border-purple-500 bg-white transform transition-opacity duration-1000 ease-linear ${
+        className={`container mx-auto my-20 w-full sm:w-2/3 md:w-1/2 lg:w-1/3 border-2 border-purple-500 bg-white transform transition-opacity duration-1000 ease-linear ${
           isVisible ? 'opacity-100' : 'opacity-0'
         }`}
       >
         <div className="p-5 space-y-5 shadow-xl">
-          <h4 className="text-center text-3xl font-bold cursor-pointer hover:text-gray-400 hover:underline duration-500">
+          <h4 className="text-center text-2xl sm:text-3xl font-bold cursor-pointer hover:text-gray-400 hover:underline duration-500">
             Contact Us
           </h4>
 
           <form>
-            <div className="grid grid-cols-2 gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               <input
                 type="text"
                 className="border border-gray-500 px-4 py-2 focus:outline-none focus:border-purple-500"
@@ -34,18 +34,18 @@ const Form = () => {
               />
               <input
                 type="email"
-                className="border border-gray-500 px-4 py-2 focus:outline-none focus:border-purple-500 col-span-2"
+                className="border border-gray-500 px-4 py-2 focus:outline-none focus:border-purple-500 sm:col-span-2"
                 placeholder="Email"
               />
               <input
                 type="tel"
-                className="border border-gray-500 px-4 py-2 focus:outline-none focus:border-purple-500 col-span-2"
+                className="border border-gray-500 px-4 py-2 focus:outline-none focus:border-purple-500 sm:col-span-2"
                 placeholder="Phone"
               />
               <textarea
                 cols="10"
                 rows="5"
-                className="border border-gray-500 px-4 py-2 focus:outline-none focus:border-purple-500 col-span-2"
+                className="border border-gray-500 px-4 py-2 focus:outline-none focus:border-purple-500 sm:col-span-2"
                 placeholder="Write your message..."
               ></textarea>
             </div>
@@ -57,7 +57,6 @@ const Form = () => {
           </form>
         </div>
       </div>
-      
     </>
   );
 };
