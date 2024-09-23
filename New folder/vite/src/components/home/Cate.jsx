@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion'; // Import motion from framer-motion
+import { motion } from 'framer-motion';
 
 const categories = [
   { id: 1, name: "Hair Gel", imageUrl: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" },
@@ -12,7 +12,7 @@ const categories = [
 
 const Cate = () => {
   return (
-    <>
+    <div className="px-4">
       <h1 className='mt-5 font-extralight text-2xl sm:text-3xl inline-block ml-4 cursor-pointer hover:text-teal-600 underline translate-x-1 transition duration-300'>
         Categories
       </h1>
@@ -22,14 +22,14 @@ const Cate = () => {
         {categories.map((category) => (
           <motion.div
             key={category.id}
-            className="bg-white rounded-lg shadow-md p-4"
+            className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow duration-300 ease-in-out"
             initial={{ y: 100, opacity: 0 }} // Start from the bottom and invisible
             whileInView={{ y: 0, opacity: 1 }} // Animate to the original position and become visible when in view
             viewport={{ once: true }} // Animation triggers only once when the element is in view
             transition={{ type: 'spring', stiffness: 50, damping: 20, duration: 0.8 }} // Smooth scroll animation
           >
             <motion.img
-              className="h-auto max-w-full rounded-lg hover:scale-90 ease-linear transition-transform duration-300"
+              className="h-auto w-full max-w-[250px] mx-auto rounded-lg hover:scale-90 ease-linear transition-transform duration-300"
               src={category.imageUrl}
               alt={category.name}
               initial={{ y: 100, opacity: 0 }} // Start from the bottom and invisible
@@ -42,7 +42,7 @@ const Cate = () => {
           </motion.div>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 
