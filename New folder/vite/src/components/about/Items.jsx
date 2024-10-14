@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 const Items = () => {
   const [cart, setCart] = useState([]);
-   // Products data
-   const products = [
+
+  // Products data
+  const products = [
     { name: 'Product 1', description: 'Product description excerpt...', price: 5.05 },
     { name: 'Product 2', description: 'Product description excerpt...', price: 8.50 },
     { name: 'Product 3', description: 'Product description excerpt...', price: 10.50 }
   ];
+
   // Add product to cart function
   const addToCart = (product) => {
     setCart((prevCart) => [...prevCart, product]);
@@ -21,9 +23,9 @@ const Items = () => {
   // Calculate total items and total price
   const totalItems = cart.length;
   const totalPrice = cart.reduce((acc, product) => acc + product.price, 0).toFixed(2);
+
   return (
-  <>
-  <div className="container">
+    <div className="container">
       {/* Header Section */}
       <Header />
 
@@ -35,11 +37,20 @@ const Items = () => {
     </div>
   );
 };
-  
-  
+
+// Header Component
+const Header = () => (
+  <>
+    <h1>Simple JavaScript Shopping Cart</h1>
+    <p>
+      Simplified 'add to cart' functionality. Uses JavaScript
+      and WebStorage API/Cookies to remember cart data converted to JSON format.
+    </p>
+    <p>Click 'Empty Cart' button to remove session cookies from browser.</p>
+    <div id="alerts"></div>
   </>
-  )
-}
+);
+
 // ProductList Component
 const ProductList = ({ products, addToCart }) => (
   <div className="productcont">
@@ -48,7 +59,6 @@ const ProductList = ({ products, addToCart }) => (
     ))}
   </div>
 );
-
 
 // Product Component (For each product)
 const Product = ({ product, addToCart }) => (
@@ -96,14 +106,16 @@ const CartTable = ({ cart }) => (
 // CartTotals Component (displays total items and price)
 const CartTotals = ({ totalItems, totalPrice }) => (
   <table id="carttotals">
-    <tr>
-      <td><strong>Items</strong></td>
-      <td><strong>Total</strong></td>
-    </tr>
-    <tr>
-      <td>x <span id="itemsquantity">{totalItems}</span></td>
-      <td>$<span id="total">{totalPrice}</span></td>
-    </tr>
+    <tbody>
+      <tr>
+        <td><strong>Items</strong></td>
+        <td><strong>Total</strong></td>
+      </tr>
+      <tr>
+        <td>x <span id="itemsquantity">{totalItems}</span></td>
+        <td>$<span id="total">{totalPrice}</span></td>
+      </tr>
+    </tbody>
   </table>
 );
 
@@ -115,6 +127,4 @@ const CartButtons = ({ emptyCart }) => (
   </div>
 );
 
-
-
-export default Items
+export default Items;
