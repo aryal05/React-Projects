@@ -23,7 +23,18 @@ const Items = () => {
   const totalPrice = cart.reduce((acc, product) => acc + product.price, 0).toFixed(2);
   return (
   <>
+  <div className="container">
+      {/* Header Section */}
+      <Header />
 
+      {/* Products List */}
+      <ProductList products={products} addToCart={addToCart} />
+
+      {/* Cart Section */}
+      <Cart cart={cart} totalItems={totalItems} totalPrice={totalPrice} emptyCart={emptyCart} />
+    </div>
+  );
+};
   
   
   </>
