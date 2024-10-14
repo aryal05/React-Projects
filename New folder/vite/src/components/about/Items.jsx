@@ -62,5 +62,37 @@ const Product = ({ product, addToCart }) => (
   </div>
 );
 
+// Cart Component
+const Cart = ({ cart, totalItems, totalPrice, emptyCart }) => (
+  <div className="cart-container">
+    <h2>Cart</h2>
+    <CartTable cart={cart} />
+    <hr />
+    <CartTotals totalItems={totalItems} totalPrice={totalPrice} />
+    <CartButtons emptyCart={emptyCart} />
+  </div>
+);
+
+// CartTable Component (displays the list of items in the cart)
+const CartTable = ({ cart }) => (
+  <table>
+    <thead>
+      <tr>
+        <th><strong>Product</strong></th>
+        <th><strong>Price</strong></th>
+      </tr>
+    </thead>
+    <tbody id="carttable">
+      {cart.map((item, index) => (
+        <tr key={index}>
+          <td>{item.name}</td>
+          <td>${item.price.toFixed(2)}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+);
+
+
 
 export default Items
