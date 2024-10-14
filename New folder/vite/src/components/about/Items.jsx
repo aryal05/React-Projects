@@ -93,6 +93,19 @@ const CartTable = ({ cart }) => (
   </table>
 );
 
+// CartTotals Component (displays total items and price)
+const CartTotals = ({ totalItems, totalPrice }) => (
+  <table id="carttotals">
+    <tr>
+      <td><strong>Items</strong></td>
+      <td><strong>Total</strong></td>
+    </tr>
+    <tr>
+      <td>x <span id="itemsquantity">{totalItems}</span></td>
+      <td>$<span id="total">{totalPrice}</span></td>
+    </tr>
+  </table>
+);
 
 
 export default Items
