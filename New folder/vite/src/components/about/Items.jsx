@@ -107,5 +107,14 @@ const CartTotals = ({ totalItems, totalPrice }) => (
   </table>
 );
 
+// CartButtons Component (Empty Cart and Checkout buttons)
+const CartButtons = ({ emptyCart }) => (
+  <div className="cart-buttons">
+    <button id="emptycart" onClick={emptyCart}>Empty Cart</button>
+    <button id="checkout">Checkout</button>
+  </div>
+);
+
+
 
 export default Items
