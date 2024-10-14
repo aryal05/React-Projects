@@ -40,5 +40,15 @@ const Items = () => {
   </>
   )
 }
+// ProductList Component
+const ProductList = ({ products, addToCart }) => (
+  <div className="productcont">
+    {products.map((product, index) => (
+      <Product key={index} product={product} addToCart={addToCart} />
+    ))}
+  </div>
+);
+
+
 
 export default Items
