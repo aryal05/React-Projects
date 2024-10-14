@@ -50,5 +50,17 @@ const ProductList = ({ products, addToCart }) => (
 );
 
 
+// Product Component (For each product)
+const Product = ({ product, addToCart }) => (
+  <div className="product">
+    <h3 className="productname">{product.name}</h3>
+    <p>{product.description}</p>
+    <p className="price">${product.price.toFixed(2)}</p>
+    <button className="addtocart" onClick={() => addToCart(product)}>
+      Add To Cart
+    </button>
+  </div>
+);
+
 
 export default Items
