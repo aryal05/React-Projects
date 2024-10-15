@@ -21,13 +21,13 @@ const Service = () => {
           <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
         </div>
       </div>
-      <div class="w-full md:w-1/2 xl:w-1/3 p-4">
+      {/* <div class="w-full md:w-1/2 xl:w-1/3 p-4">
         <div class="bg-white shadow-md p-4 rounded">
           <i class="fas fa-headphones text-4xl text-blue-500 mb-4"></i>
           <h3 class="text-2xl font-bold mb-2">24/7 Support</h3>
           <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
         </div>
-      </div>
+      </div> */}
     </div>
   </div>
 </section>
