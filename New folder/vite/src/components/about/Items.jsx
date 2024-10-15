@@ -41,13 +41,14 @@ const Items = () => {
 // Header Component
 const Header = () => (
   <>
+  <div className='text-center mt-8'>
     <h1 className="text-3xl font-bold mb-4">Simple JavaScript Shopping Cart</h1>
     <p className="text-gray-600 mb-2">
       Simplified 'add to cart' functionality. Uses JavaScript
       and WebStorage API/Cookies to remember cart data converted to JSON format.
     </p>
     <p className="text-gray-600 mb-4">Click 'Empty Cart' button to remove session cookies from browser.</p>
-    <div id="alerts"></div>
+    </div>
   </>
 );
 

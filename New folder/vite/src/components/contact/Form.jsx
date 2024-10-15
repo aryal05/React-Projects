@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Service from './Service';
 
 const Form = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -46,6 +47,7 @@ const Form = () => {
   };
 
   return (
+    <>
     <div
       className={`container mx-auto my-20 w-full sm:w-2/3 md:w-1/2 lg:w-1/3 border-2 border-purple-500 bg-white transform transition-opacity duration-1000 ease-linear ${
         isVisible ? 'opacity-100' : 'opacity-0'
@@ -120,6 +122,9 @@ const Form = () => {
         </form>
       </div>
     </div>
+    <Service/>
+    </>
+  
   );
 };
 
