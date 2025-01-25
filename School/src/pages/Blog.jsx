@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Collection = () => {
+const Blog = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const Collection = () => {
   )
 }
 
-export default Collection
+export default Blog

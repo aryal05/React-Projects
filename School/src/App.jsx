@@ -6,6 +6,7 @@ import Collection from './pages/Collection'
 import Contact from './pages/Contact'
 import Login from './pages/Login'
 import NavBar from './components/NavBar'
+import Blog from './pages/Blog'
 const App = () => {
   return (
     <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
@@ -14,7 +15,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
-        <Route path='/collection' element={<Collection/>} />
+        <Route path='/blog' element={<Blog/>} />
         <Route path='/contact' element={<Contact/>} />
         <Route path='/login' element={<Login/>} />
 
